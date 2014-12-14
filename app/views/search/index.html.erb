@@ -1,0 +1,6 @@
+<h1>OMG THIS IS A MOVIE SEARCH!!!</h1>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= text_field_tag(:q, nil, :placeholder => "Movie Title") %>
+  <%= submit_tag("Search") %>
+<% end %>
